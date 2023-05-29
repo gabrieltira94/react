@@ -4,6 +4,8 @@ import MainContext from "./useContext/MainContext";
 import MainUseEffect from "./useEffect/MainUseEffect";
 import MainUseMemo from "./useMemo/MainUseMemo";
 import MainUseRef from "./useRef/MainUseRef";
+import { Suspense } from "react";
+import MainForwardRef from "./forwardRef/MainForwardRef";
 
 export default function ReactHooksView() {
   return (
@@ -40,10 +42,18 @@ export default function ReactHooksView() {
 
       <hr />
       <TopicHeader
-        componentUsed="MainUseRef"
+        componentUsed="MainUseRef.tsx"
         topic="useRef hook"
       />
       <MainUseRef />
+
+      <hr />
+      <TopicHeader
+        componentUsed="MainForwardRef.tsx"
+        topic="forwardRef"
+      />
+      <MainForwardRef />
+
     </>
   );
 }
