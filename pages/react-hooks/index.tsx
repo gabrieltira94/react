@@ -1,14 +1,14 @@
 import { Days, WorkoutContext } from "@/contexts/WorkoutContext";
-import ReactView from "@/views/React";
+import ReactHooksView from "@/views/ReactHooks";
 import { useState } from "react";
 
-export default function React() {
+export default function ReactHooks() {
   const [day, setDay] = useState<Days>('Rest');
 
   return (
     // setDay assignemnt is spread in all places where `useWorkoutContext()` hook is used
     <WorkoutContext.Provider value={{ day, setDay }}>
-      <ReactView />
+      <ReactHooksView />
     </WorkoutContext.Provider>
   );
 }

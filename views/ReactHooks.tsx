@@ -1,8 +1,9 @@
 import ExerciseCounter from "@/components/ExerciseCounter";
 import TopicHeader from "@/components/TopicHeader";
 import MainContext from "./Context/MainContext";
+import MainUseEffect from "./useEffect/MainUseEffect";
 
-export default function ReactView() {
+export default function ReactHooksView() {
   return (
     <>
       <h3>React Page</h3 >
@@ -18,10 +19,19 @@ export default function ReactView() {
       <hr />
       <TopicHeader
         componentUsed="WorkoutContext.tsx"
-        topic="This shows how React Context works"
+        topic="useContext hook"
       />
 
       <MainContext />
+
+      <hr />
+
+      <TopicHeader
+        componentUsed="MainUseEffect.tsx"
+        topic="useEffect hook"
+      />
+
+      <MainUseEffect />
 
       <hr />
 
