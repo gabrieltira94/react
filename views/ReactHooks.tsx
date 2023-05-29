@@ -4,8 +4,8 @@ import MainContext from "./useContext/MainContext";
 import MainUseEffect from "./useEffect/MainUseEffect";
 import MainUseMemo from "./useMemo/MainUseMemo";
 import MainUseRef from "./useRef/MainUseRef";
-import { Suspense } from "react";
 import MainForwardRef from "./forwardRef/MainForwardRef";
+import MainMemo from "./memo/MainMemo";
 
 export default function ReactHooksView() {
   return (
@@ -53,6 +53,13 @@ export default function ReactHooksView() {
         topic="forwardRef"
       />
       <MainForwardRef />
+
+      <hr />
+      <TopicHeader
+        componentUsed="MainMemo.tsx"
+        topic="memo"
+      />
+      <MainMemo />
 
     </>
   );
