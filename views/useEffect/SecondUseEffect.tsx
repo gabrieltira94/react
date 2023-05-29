@@ -1,5 +1,5 @@
 import { SecondaryDiv } from "@/components/divs/SecondaryDiv";
-import { Muscles } from "@/misc/Muscles";
+import { Muscles } from "@/misc/Data";
 import { useEffect, useState } from "react";
 
 interface Props {

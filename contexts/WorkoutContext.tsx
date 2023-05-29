@@ -1,6 +1,6 @@
+import { Days } from '@/misc/Data';
 import { createContext, useContext } from 'react';
 
-export type Days = 'Monday' | 'Tuesday' | 'Friday' | 'Rest';
 interface IWorkoutContext {
   day: Days;
   setDay: (day: Days) => void;

@@ -1,4 +1,4 @@
-import { Muscles } from "@/misc/Muscles";
+import { Muscles } from "@/misc/Data";
 import { useState } from "react";
 
 interface Props {

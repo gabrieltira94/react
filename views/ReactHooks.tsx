@@ -1,7 +1,8 @@
 import ExerciseCounter from "@/components/ExerciseCounter";
 import TopicHeader from "@/components/TopicHeader";
-import MainContext from "./Context/MainContext";
+import MainContext from "./useContext/MainContext";
 import MainUseEffect from "./useEffect/MainUseEffect";
+import MainUseMemo from "./useMemo/MainUseMemo";
 
 export default function ReactHooksView() {
   return (
@@ -32,6 +33,15 @@ export default function ReactHooksView() {
       />
 
       <MainUseEffect />
+
+      <hr />
+
+      <TopicHeader
+        componentUsed="MainUseMemo.tsx"
+        topic="useMemo hook"
+      />
+
+      <MainUseMemo />
 
       <hr />
 
